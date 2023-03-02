@@ -1,0 +1,31 @@
+{
+  "name": "upgage-cli",
+  "version": "0.1.0",
+  "description": "CLI for creators and UniversalPage",
+  "repository": "https://github.com/Universal-Page/upage-cli",
+  "scripts": {
+    "postinstall": "husky install",
+    "pre-commit": "yarn lint:fix",
+    "build": "tsc",
+    "start": "ts-node",
+    "lint": "eslint --ignore-path .gitignore src/ --ext ts,js,tsx,jsx",
+    "lint:fix": "eslint --ignore-path .gitignore src/ --ext ts,js,tsx,jsx --fix"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.4",
+    "@types/uuid": "^9.0.1",
+    "@types/yargs": "^17.0.13",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "eslint": "^8.35.0",
+    "eslint-plugin-import": "^2.26.0",
+    "husky": "^8.0.1",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "path": "^0.12.7",
+    "uuid": "^9.0.0",
+    "yargs": "^17.6.2"
+  }
+}

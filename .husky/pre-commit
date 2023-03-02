@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+stagedFiles="$(git diff --name-only --cached --diff-filter=ACMRT)"
+
+yarn lint:fix
+
+git add $stagedFiles

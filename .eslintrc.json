@@ -1,0 +1,90 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "root": true,
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "rules": {
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_",
+        "ignoreRestSiblings": true
+      }
+    ],
+    "@typescript-eslint/no-var-requires": 2,
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "semi": ["error", "never"],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "max-len": ["off", 120, 2],
+    "camelcase": [
+      "off",
+      {
+        "properties": "always"
+      }
+    ],
+    "array-bracket-spacing": ["off"],
+    "comma-dangle": ["error", "always-multiline"],
+    "comma-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "dot-notation": [
+      "error",
+      {
+        "allowKeywords": true,
+        "allowPattern": ""
+      }
+    ],
+    "eol-last": ["error", "always"],
+    "eqeqeq": ["error", "smart"],
+    "no-console": "off",
+    "no-multi-spaces": "error",
+    "no-debugger": "off",
+    "no-dupe-args": "error",
+    "no-dupe-keys": "error",
+    "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+    "no-trailing-spaces": [
+      "error",
+      {
+        "skipBlankLines": false
+      }
+    ],
+    "no-use-before-define": "off",
+    "no-var": "error",
+    "object-curly-spacing": ["error", "always"],
+    "prefer-const": "error",
+    "key-spacing": ["error"],
+    "space-in-parens": ["error", "never"],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ]
+  }
+}
