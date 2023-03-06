@@ -8,13 +8,16 @@
     "pre-commit": "yarn lint:fix",
     "build": "tsc",
     "start": "ts-node",
-    "lint": "eslint --ignore-path .gitignore src/ --ext ts,js,tsx,jsx",
-    "lint:fix": "eslint --ignore-path .gitignore src/ --ext ts,js,tsx,jsx --fix"
+    "lint": "eslint --ignore-path .gitignore src/",
+    "lint:fix": "eslint --ignore-path .gitignore src/ --fix"
   },
   "devDependencies": {
+    "@types/cli-progress": "^3.11.0",
+    "@types/figlet": "^1.5.5",
+    "@types/inquirer": "^8.2.3",
     "@types/node": "^18.14.4",
+    "@types/sharp": "^0.31.1",
     "@types/uuid": "^9.0.1",
-    "@types/yargs": "^17.0.13",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
     "eslint": "^8.35.0",
@@ -24,8 +27,14 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
+    "chalk": "^4.1.2",
+    "cli-progress": "^3.12.0",
+    "figlet": "^1.5.2",
+    "inquirer": "^8.2.3",
+    "keccak256": "^1.0.6",
     "path": "^0.12.7",
+    "sharp": "^0.31.3",
     "uuid": "^9.0.0",
-    "yargs": "^17.6.2"
+    "validate-typescript": "^4.0.2"
   }
 }
