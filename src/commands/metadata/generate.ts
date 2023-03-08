@@ -187,7 +187,7 @@ const buildMetadata = async ({
         const imageJobs = mediaFiles
           ?.filter((info) => info.index === token.index && info.category === 'image')
           ?.map((info) => buildFileInfo({ baseUri, info }))
-        const images = imageJobs ? await Promise.all(imageJobs) : undefined
+        const images = imageJobs ? [await Promise.all(imageJobs)] : undefined
 
         const metadata = {
           LSP4Metadata: {
